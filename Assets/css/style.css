@@ -1,0 +1,187 @@
+/* Define as fontes utilizadas no documento */
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('/Assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('/Assets/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Define as regras de estilo para os elementos HTML */
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #313131;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .header-menu {
+    display: flex;
+    justify-content:  space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header-menu li {
+    margin: 0;
+  }
+  
+  .header-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .image-banner {
+    text-align: center;
+    
+  }
+  
+  .image-banner img {
+    max-width: 100%;
+    padding-top: -5000px;
+  }
+  
+  .biografia, .filmografia, .invencoes {
+    margin-top: 2rem;
+  }
+  
+  .biografia h2, .filmografia h2, .invencoes h2, .extras h2 {
+    font-weight: bold;
+    margin-top: 0;
+    color: #FFFFFF;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+  .biografia p {
+    text-align: justify;
+    line-height: 0.1;
+    font-size: 18px;
+    line-height: 25px;
+display: flex;
+align-items: center;
+color: #fff;
+  }
+  
+  .filmografia ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+   .filmografia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .filmografia li {
+    flex-basis: calc(33.33% - 1rem);
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #3b3b3b;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .filmografia li:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .filmografia img {
+    width: 220px;
+    height: 295px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .filmografia p {
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .invencoes p {
+    text-align: justify;
+    line-height: 1.5;
+    text-align: justify;
+    line-height: 0.1;
+    font-size: 18px;
+    line-height: 25px;
+display: flex;
+align-items: center;
+color: #fff;
+  }
+
+.video-extra {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    width: 100%;
+    height: 42px;
+    background-color: #47D1CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.footer__texto {
+    font-size: 14px;
+    font-weight: 300;
+    color: #313131;
+    display: flex;
+    align-items: center;
+}
+
+
+.icone {
+    width: 30px;
+
+}
+
+.icone--texto {
+    margin: 0 8px;
+    animation: pulsar 1s infinite alternate;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
